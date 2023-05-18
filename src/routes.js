@@ -11,6 +11,8 @@ import NavBar from './components/NavBar';
 import Toast from './components/utils/Toast';
 import PageNotFound from './components/pageNotFound';
 
+export const URL = process.env.REACT_APP_SERVER_URL;
+
 const AppRoute = () => {
 	return (
 		<BrowserRouter>
