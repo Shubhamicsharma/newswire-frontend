@@ -36,7 +36,7 @@ const Contact = () => {
 	return (
 		<React.Fragment>
 			<form
-				className=""
+				className="form"
 				onSubmit={(event) => {
 					event.preventDefault();
 					sendEmail(event);

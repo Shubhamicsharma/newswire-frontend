@@ -1,26 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(31, 31, 31); */
+    background-color: #fafafa;
+background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 
 .yellotail {
-    font-family: 'Yellowtail', cursive;
+    font-family: 'Heebo', sans-serif;
+    background: #D31027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EA384D, #d31068);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EA384D, #d31057); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav {
-    border-bottom: 3px solid #6c6c6c;
+    /* border-bottom: 3px solid #6c6c6c; */
 }
 
+.yellotail  img{
+    height: 8vh;
+    width: 60vw;
+    object-fit: cover;
+    object-position: center;
+    padding-left: 8rem;
+    position: relative;
+
+}
+
+
 .navbar {
-    justify-content: center;
+    justify-content:left;
+    
 }
 
 .nav {
-    border-bottom: 1px solid #e6e6e6;
+    justify-content: left;
+
+    background-color: rgb(44, 44, 44);
+    /* border-bottom: 3px solid #aeaeae; */
 }
 
 .nav .nav-link {
-    color: #17a2b8;
+    color: #d8d8d8;
     font-weight: bold;
+}
+
+.nav .nav-link:hover{
+    background-color:#3382af
 }
 
 /*////////////////////////////////////
@@ -36,12 +66,14 @@ nav {
     margin-left: -30px;
     /* gutter size offset */
     width: auto;
+    font-family: 'Abel', sans-serif;    
 }
 
 .my-masonry-grid_column {
     padding-left: 30px;
     /* gutter size */
     background-clip: padding-box;
+    
 }
 
 /* Style your items */
@@ -49,12 +81,15 @@ nav {
     /* change div to reference your elements you put in <Masonry> */
     background: grey;
     margin-bottom: 30px;
+    box-shadow: 1px 1px 5px 1px grey;
 }
 
 .my-masonry-grid .content {
     padding: 15px;
     background: white;
-    border: 1px solid #dbdbdb;
+    /* border: 1px solid #cac7c7; */
+    color: black;
+    
 }
 
 .my-masonry-grid .content .title {
@@ -66,7 +101,7 @@ nav {
 }
 
 .my-masonry-grid .content .excerpt {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .my-masonry-grid .author {
@@ -134,4 +169,39 @@ nav {
     margin-top: 10px;
     font-style: italic;
     font-weight: 300;
+}
+
+
+/* New News form */
+
+.form-background{
+    background-color: skyblue;
+    width: 100%;
+    height: 100vh;
+}
+.form{
+    /* border:2px solid grey; */
+    box-shadow: 1px 1px 5px 2px grey;
+    font-family: 'Abel', sans-serif;    
+
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-top: 4rem;
+    background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8692fd, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86d3fd, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* SHOW NEWS */
+.article_container{
+    font-family: 'Playfair', serif;
+
 }
